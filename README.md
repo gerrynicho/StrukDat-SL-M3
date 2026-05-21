@@ -1,4 +1,8 @@
 # SD-SL3
+Link Video Asistensi:
+
+[https://youtu.be/FxkLyEeW0XA](https://youtu.be/FxkLyEeW0XA)
+
 ## TODO
 setelah ngertiin solusi-solusi ini, coba implementasi soal 1 pake bfs/dfs ama soal 5 pakai bfs/dfs juga
 > [!TIP]
