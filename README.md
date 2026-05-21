@@ -6,4 +6,6 @@ setelah ngertiin solusi-solusi ini, coba implementasi soal 1 pake bfs/dfs ama so
 
 > [!NOTE]
 > Cara menghitung jumlah komponen terpisah menggunakan dsu itu dengan awal mengasumsi setiap node itu adalah graph terpisah, lalu menghitung edge list yang menghubungkan node-node tersebut, dan setiap kali menemukan edge yang menghubungkan dua node, kita akan menggabungkan kedua node tersebut menjadi satu komponen. Setelah semua edge diproses, jumlah komponen terpisah dapat dihitung dengan menghitung jumlah root unik dalam struktur DSU.
+
+> [!NOTE]
 > Untuk BFS/DFS, kita mulai menghitung dari 0 (awal). Setiap kali kita menemukan node yang belum dikunjungi, kita akan melakukan BFS/DFS untuk menjelajahi semua node yang terhubung dengan node tersebut, dan setiap kali kita menyelesaikan BFS/DFS, kita akan menambah jumlah komponen terpisah. Setelah semua node diproses, jumlah komponen terpisah dapat dihitung dengan menghitung berapa kali kita melakukan BFS/DFS.
