@@ -41,12 +41,12 @@ void solve()
         for(auto dir:directions) {
             auto ny = top.first + dir.first;
             auto nx = top.second + dir.second;
-            if(ny < 0 || ny >= n) {
+            if(ny < 0 || ny >= n) { // klo tidak accessable secara vertikal
                 continue;
-            } else if (nx < 0 || nx >= m) {
+            } else if (nx < 0 || nx >= m) { // klo tidak accessable secara horizontal
                 continue;
             }
-            if(vis[ny][nx]) {
+            if(vis[ny][nx]) { // klo udh visited
                 continue;
             }
             if(arr[ny][nx] <= arr[top.first][top.second]) {

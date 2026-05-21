@@ -49,9 +49,9 @@ void solve()
             for(auto dir:direction) {
                 auto i = top.first + dir.first;
                 auto j = top.second + dir.second;
-                if(i >= 0 && i < n) {
-                    if(j >= 0 && j < n) {
-                        if(arr[i][j] == '+') {
+                if(i >= 0 && i < n) { // klo accessable secara vertikal
+                    if(j >= 0 && j < n) { // klo accessable secara horizontal
+                        if(arr[i][j] == '+') { // adalah sebuah vertex
                             arr[i][j] = '#'; // mark visited
                             s.erase({i, j}); // dont traverse again
                             st.push({i, j});

@@ -30,7 +30,9 @@ void solve()
             for(int j = 0; j < m; j++) {
                 char c;
                 cin >> c;
-                v[i][j] = c - '0';
+                // 0001
+                // 1
+                v[i][j] = (int)(c - '0');
                 if(v[i][j]) {
                     ans[i][j] = 0;
                     q.push({0, {i, j}});
@@ -45,12 +47,12 @@ void solve()
             for(auto dir:directions) {
                 int ny = front.first + dir.first;
                 int nx = front.second + dir.second;
-                if(ny < 0 || ny >= n) {
+                if(ny < 0 || ny >= n) { // tidak accessable secara vertikal
                     continue;
-                } else if (nx < 0 || nx >= m) {
+                } else if (nx < 0 || nx >= m) { // tidak accessable secara horizontal
                     continue;
                 }
-                if (ans[ny][nx] != -1) {
+                if (ans[ny][nx] != -1) { // sudah visited
                     continue;
                 }
                 ans[ny][nx] = step+1;
